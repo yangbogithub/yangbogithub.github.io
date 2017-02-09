@@ -16,22 +16,25 @@
     
     
 
-    <meta name="description" content="#使用命令：1python [脚本文件路径] [工程目录路径] [Localizable.strings路径]
+    <meta name="description" content="#使用
+命令：1python [脚本文件路径] [工程目录路径] [Localizable.strings路径]
 例如：12python filter_unused_string.py ~/Desktop/DemoProject ~/Desktop/DemoProject/Base.lproj/Localizable.strings`
-当前目录输出过滤后的Localizable.strings文件：">
+当前目录输出过滤后的Localizable.strings文件">
 <meta property="og:type" content="article">
 <meta property="og:title" content="filter unused string | 随波逐流">
 <meta property="og:url" content="https://iyangbo.github.io/2017/02/09/filter-unused-string/index.html">
 <meta property="og:site_name" content="随波逐流">
-<meta property="og:description" content="#使用命令：1python [脚本文件路径] [工程目录路径] [Localizable.strings路径]
+<meta property="og:description" content="#使用
+命令：1python [脚本文件路径] [工程目录路径] [Localizable.strings路径]
 例如：12python filter_unused_string.py ~/Desktop/DemoProject ~/Desktop/DemoProject/Base.lproj/Localizable.strings`
-当前目录输出过滤后的Localizable.strings文件：">
-<meta property="og:updated_time" content="2017-02-09T11:32:18.000Z">
+当前目录输出过滤后的Localizable.strings文件">
+<meta property="og:updated_time" content="2017-02-09T11:45:30.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="filter unused string | 随波逐流">
-<meta name="twitter:description" content="#使用命令：1python [脚本文件路径] [工程目录路径] [Localizable.strings路径]
+<meta name="twitter:description" content="#使用
+命令：1python [脚本文件路径] [工程目录路径] [Localizable.strings路径]
 例如：12python filter_unused_string.py ~/Desktop/DemoProject ~/Desktop/DemoProject/Base.lproj/Localizable.strings`
-当前目录输出过滤后的Localizable.strings文件：">
+当前目录输出过滤后的Localizable.strings文件">
     
     
     
@@ -165,6 +168,11 @@ classes that you can use:
       <span class="post-meta__tags tags">
 
           
+            <font class="categories">
+            &#8226; 分类:
+            <a class="categories-link" href="/categories/技术/">技术</a>
+            </font>
+          
 
           
              &#8226; 标签:
@@ -181,7 +189,8 @@ classes that you can use:
   </header>
 
   <section id="post-content" class="article-content post">
-    <p>#使用<br>命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">python [脚本文件路径] [工程目录路径] [Localizable.strings路径]</div></pre></td></tr></table></figure></p>
+    <p>#使用</p>
+<p>命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">python [脚本文件路径] [工程目录路径] [Localizable.strings路径]</div></pre></td></tr></table></figure></p>
 <p>例如：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">python filter_unused_string.py ~/Desktop/DemoProject ~/Desktop/DemoProject/Base.lproj/Localizable.strings</div><div class="line">`</div></pre></td></tr></table></figure></p>
 <p>当前目录输出过滤后的<code>Localizable.strings</code>文件：<code>outputLocalizable.strings</code></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">#!/usr/bin/python</div><div class="line">import re</div><div class="line">import pdb </div><div class="line">import os</div><div class="line">import sys</div><div class="line"></div><div class="line">def filterFile(filepath,word):</div><div class="line">	sourcefiles = open(filepath,&apos;r&apos;)</div><div class="line">	arr = sourcefiles.readlines()</div><div class="line">	for index in range(len(arr)):</div><div class="line">		line = arr[index]</div><div class="line">		if line.find(word) != -1:</div><div class="line">			sourcefiles.close()</div><div class="line">			# print(filepath.split(&quot;/&quot;)[-1],index,word)</div><div class="line">			return True</div><div class="line">	sourcefiles.close()</div><div class="line"></div><div class="line">def allfiles(filepath,word):</div><div class="line">	for dirpath,dirnames,filenames in os.walk(filepath):</div><div class="line">		for file in filenames:</div><div class="line">			if file.find(&apos;Localizable.strings&apos;) != -1:</div><div class="line">				continue</div><div class="line">			if file.find(&apos;.m&apos;) == -1:</div><div class="line">				continue</div><div class="line">			child = os.path.join(&apos;%s/%s&apos; % (dirpath, file))</div><div class="line">			rst = filterFile(child,word)</div><div class="line">			if rst:</div><div class="line">				return True</div><div class="line">	return False</div><div class="line"></div><div class="line">def allwords(filepath,wordpath):</div><div class="line">	if os.path.exists(filepath) == False:</div><div class="line">		print(&quot;%s not exist !!!&quot;%(filepath));</div><div class="line">		return</div><div class="line">	if os.path.exists(wordpath) == False:</div><div class="line">		print(&quot;%s not exist !!!&quot;%(wordpath));</div><div class="line">		return</div><div class="line"></div><div class="line">	arr = []</div><div class="line">	linearr = []</div><div class="line">	wordsfile = open(wordpath,&apos;r&apos;)</div><div class="line">	for word in wordsfile.readlines():</div><div class="line">		pattern = re.compile(r&apos;&quot;(.*?)&quot;&apos;)</div><div class="line">		match = pattern.match(word)</div><div class="line">		if match:</div><div class="line">			childs = match.group()</div><div class="line">			if allfiles(filepath,childs) == False:</div><div class="line">				arr.append(childs)</div><div class="line">			else:</div><div class="line">				linearr.append(word)</div><div class="line">		else:</div><div class="line">			linearr.append(word)</div><div class="line">	print(&quot;unused string: %s&quot;%(arr))</div><div class="line">	output = open(&apos;outputLocalizable.strings&apos;, &apos;w&apos;)</div><div class="line">	for word in linearr:</div><div class="line">		output.write(word)</div><div class="line">	output.close()</div><div class="line">	print(&quot;new strings file:%s/%s&quot;%(cur_file_dir(),&apos;outputLocalizable.strings&apos;))</div><div class="line"></div><div class="line"></div><div class="line">def cur_file_dir():</div><div class="line">	path = sys.path[0]</div><div class="line">	if os.path.isdir(path):</div><div class="line">		return path</div><div class="line">	elif os.path.isfile(path):</div><div class="line">		return os.path.dirname(path)</div><div class="line"></div><div class="line">if len(sys.argv) &lt; 3 :</div><div class="line">	print(&apos;please input argv !!!&apos;)</div><div class="line">else:</div><div class="line">	allwords(sys.argv[1],sys.argv[2])</div></pre></td></tr></table></figure>
